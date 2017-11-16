@@ -12,6 +12,7 @@
 
 							# Git and Github 
 							## An Introduction for Labs
+							Franklin Sayre (fdsayre@umn.edu)
 
 
 						</textarea>
@@ -23,9 +24,9 @@
 							## What is Git?
 							
 							- Git IS NOT GitHub
-							- Git a program for tracking changes to files using *repositories*
+							- Git a **program** for tracking changes to files using **repositories**
 							- These repositories can be local (on your own machine), online, or both
-							- GitHub one place for sharing online repositories 
+							- GitHub is a one possible service for sharing Git repositories online
 
 						</textarea>
 				</section>
@@ -72,6 +73,15 @@
 						</textarea>
 				</section>
 				
+				<section data-markdown>
+						<textarea data-template>
+
+							## IMPORTANT:
+							## GIT CAN BE WEIRD, BUT
+							## IT'S HARD TO FUCK THINGS UP TOO MUCH
+
+						</textarea>
+				</section>
 
 				
 				<section data-markdown>
@@ -80,10 +90,10 @@
 							## Terminology
 
 							- Git: program for tracking changes
-							- Repository: directory(ies) tracked with Git
-							- Remote repository: online repository
-							- Add: adding a file so it is tracked
-							- Commit: adding a file to the repository
+							- Repository: a directory and it's contents tracked with Git
+							- Remote: online repository
+							- Add: adding a file so Git knows to track it
+							- Commit: adding a file to the local repository
 							- Push: moving changes in a local repository to a remote repo
 							- Pull: moving changes from a remote repo to a local
 
@@ -118,6 +128,7 @@
 							
 							- [GUI](https://desktop.github.com/)
 							- [CLI instructions](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+							- Website (for text)
 
 
 						</textarea>
@@ -168,11 +179,11 @@
 				<section data-markdown>
 						<textarea data-template>
 
-							## Two Ways of Setting-Up a New Repro: 
+							## Two Ways of Setting-Up a  Repro: 
 							```
 							#initializing an existing directory
 							git init
-							#cloning and existing repository 
+							#or you can clone an existing repository 
 							git clone URL
 							```
 
@@ -187,7 +198,7 @@
 							
 							```
 							#Add a file so git knows to watch it
-							git add file.ext
+							git add file.txt
 							#Commit a file to add it to version control locally
 							git commit -m "I've just made some very dramatic changes"
 							#Push a file to the remote server (github)
@@ -202,7 +213,7 @@
 
 							## Other processes
 														
-							```BASH
+							```
 							#get status of files/local repository
 							git status
 							#pull down changes from remote repository
